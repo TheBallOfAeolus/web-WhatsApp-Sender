@@ -5,10 +5,8 @@ const launchChat = (number) => {
         tab = tabs[0];
         if (!tab) {
             chrome.tabs.create({active: true, url});
-            chrome.tabs.remove({active: true, url});
         } else {
             chrome.tabs.update(tab.id, {active: true, url});
-            chrome.tabs.remove({active: true, url});
         };
     });
 };
