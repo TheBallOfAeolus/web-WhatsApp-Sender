@@ -12,7 +12,7 @@ const launchChat = (number) => {
 };
 
 const formatNumber = (number) => {
-    return number.replace(/[\+\(\)\-\s]/g, '');
+    return number.replace(/[\+\(\)\-\.\,\s]/g, '');
 };
 
 const redirectWhatsapp = () => {
