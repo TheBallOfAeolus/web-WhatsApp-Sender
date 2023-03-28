@@ -1,6 +1,6 @@
 const launchChat = (number) => {
-    let url = "https://api.whatsapp.com/send/?phone=" + number;
-    chrome.tabs.query({url: "*://api.whatsapp.com/*"}, (tabs) => {
+    let url = "https://web.whatsapp.com/send/?phone=" + number;
+    chrome.tabs.query({url: "*://web.whatsapp.com/*"}, (tabs) => {
         let tab = null;
         tab = tabs[0];
         if (!tab) {
